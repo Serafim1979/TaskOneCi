@@ -4,7 +4,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 void menu()
 {
-    printf("\n\tSelect the desired action.\n");
+    printf("\n\n\t\t\tSelect the desired action.\n");
     printf("\n**************************************************************************************\n");
     printf("\n1.Calculate the arithmetic mean of the two values x1 and x2.\n");
     printf("2.Translate the length specified in inches into centimeters (10 inches = 254 mm).\n");
@@ -84,3 +84,22 @@ double Celsius_to_Fahrenheit(double cels)
     return 1.8 * cels + 32;
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
+double square_ring(double R, double r)
+{
+    return PI * ((R*R)-(r*r));
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+double square_triangle(double leg_one, double leg_two)
+{
+    return (leg_one * leg_two)/2;
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+double cylinder_surface_area(double R, double h)
+{
+    return 2 * PI * R*(h+R);
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+double cylinder_volume(double R, double h)
+{
+    return (PI * (R * R)) * h;
+}
